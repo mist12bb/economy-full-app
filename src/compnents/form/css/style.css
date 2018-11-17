@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+@import url('https://fonts.googleapis.com/css?family=KoHo');
+
+@import url('https://fonts.googleapis.com/css?family=Niramit');
+
+
+
+label {
+    width: 67px;
+    height: 22px;
+    left: 469px;
+    top: 131px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 18px;
+    
+    color: #000000;
+     margin: 0px 0px !important ;
+    
+}
+
+input[type="checkbox"] {
+    width: 17px;
+    height: 17px;
+
+
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.25);
+    border: none;
+
+}
+form {  
+    background: rgba(10, 10, 10, 0.1);
+    max-width: 230px;
+    min-width: 100px;
+    min-height: 30vh;
+    padding: 20px;
+    display: grid;
+    
+    grid-template-areas: "date  date date"
+    "amount amount amount"
+        "to-from to-from to-from"
+    "info info info" ;
+    grid-template-columns: repeat(3, 1fr)
+}
+.amount-input {
+    grid-area: amount;
+    padding-top: 30px;
+}
+
+.amount-input > p, .date-input >p  {
+    font-style: oblique;
+    font-size: 14px;
+    color:gray;
+    margin: 0;
+    padding: 3px 0
+    
+}
+.from-input input, .to-input  input{
+    grid-area: to-from ;
+    margin: 10px
+}
+.amount {
+    
+    
+    display: flex;
+    min-width: 100px;
+    height: 26px;
+    text-align: center;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.85);
+    font-weight: black
+    
+
+
+}
+/* end of amount */
+.date-input {
+    grid-area: date;
+    max-width: 200px;
+    overflow: hidden;
+    padding-top: 30px;
+}
+.date-input > input {
+    min-width: 142px;
+    max-width: 152px;;
+    height: 32px;
+}   
+.info-input {
+    grid-area: info;
+    width: 100%;
+    padding-top: 30px;
+}
+
+.info-input > textarea{
+    width: 70% ;
+
+
+height: 64px;
+resize: none;
+display:block;
+
+}
+
+form label {
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 23px;
+
+color: #000000;
+font-family: 'KoHo', sans-serif;
+margin: 10px;
+
+
+}
+.from-input {
+    background: ;
+}
+ form{
+    text-align: start
+}
+form > div > input {
+    
+background: #FFFFFF;
+border: 0.75px solid #000000;
+box-sizing: border-box;
+border-radius: 3px;
+display: block
+;font-family: 'Raleway', sans-serif;
+
+}
+
+#form-input, form  textarea  , form  div  input{
+    margin: 3 10px !important;
+    font-size: 17px;
+    font-family: 'Niramit', sans-serif;
+
+}
+
+.category {
+    margin: 20px;
+    color: red
+
+}
+.category > input {
+margin-left: 20px;
+}

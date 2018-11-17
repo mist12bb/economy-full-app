@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Sniglet');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Muli|Nunito|Source+Sans+Pro');
+
+
+.App {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(12, 70px);
+    grid-auto-rows: auto;
+}
+
+/* sum ... */
+.data-info {
+  display: grid;
+    grid-template-areas: "title comm"
+    "one tow"
+
+}
+.title p {
+    color: wheat;
+}
+
+.title-sum {
+    grid-area: title
+}
+.title-com {
+    grid-area: comm
+}
+.sum {
+    width: 77px;
+    height: 77px;
+    border-radius: 50px;
+    background: #006277;
+    font-family: "Sniglet";
+    margin: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:   #C4C4C4;
+    font-size: 20px
+}
+.sum:nth-child(2) {
+   grid-area: one
+} 
+
+.sum:nth-child(2) {
+    grid-area: tow
+} 
+.sum p {
+
+}
+/* styleing the top lavel of the side menu */
+
+/* e */
+
+.side {
+    grid-column: 1/4;
+    grid-row: 1
+    ;width: 100%;
+  }
+  
+  /* styleing the menu at self */
+  
+  .side-bar-menu {
+     width: 254px; 
+    height: 873px;
+    background: #FFF7F7;
+    /* Red */
+    border: 1px solid #EB5757;
+    box-sizing: border-box;
+}
+
+.side-bar-menu>button {
+    border-top: 0.75px solid #AEAEAE;
+    width: 252px;
+    height: 37px;
+    border-radius: none !important
+}
+
+/* e */
+.form {
+  grid-column: 14;
+}
+.main {
+    grid-column: 5;
+    width: 1183px;
+    height: auto;
+    background: hsla(10, 10%, 30%, 0.9);
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    grid-auto-rows: auto;
+}
+
+.dispaly {
+    grid-column: 5;
+    width: 480px
+}
+
+.itemAct {
+    width: 468px;
+    height: 97px;
+    background: linear-gradient(221.81deg, #3F676F -7.52%, #006277 112.47%);
+    border: 2px solid #6A6A6A;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.displayTitle {
+    width: 286px;
+    height: 80px;
+    font-family: Sniglet;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 64px;
+    color: #FFFFFF;
+    font-family: "Sniglet", sans-serif
+}
+
+button {
+    border: none
+}
+
+/* ! styling the box the display the action data */
+
+.box-act {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    margin: 20px 0px
+}
+
+.itemAct {
+    display: grid;
+    grid-template-columns: repeat(7, 66px);
+    grid-auto-rows: auto;
+}
+
+.itemAct div:nth-child(2) {
+   /*  border-right: 0.2px solid grey; */
+    border-right: hsla(0, 0%, 10%, 0.4) solid 0.6px;
+}
+/* remove btn */
+.itemAct div:nth-child(1) {
+   /*  border-right: 0.2px solid grey; */
+}
+
+.itemAct div:nth-child(3) {
+    border-right: hsla(0, 0%, 10%, 0.4) solid 0.6px;
+}
+
+.box-act>.data {
+    grid-row: 2;
+    grid-column: 1/3;
+}
+
+.box-act>.actButtons {
+    grid-column: 1/3;
+    display: flex;
+    grid-row: 1;
+    border-radius: 8px;
+    justify-content: center
+    
+  }
+  
+  .actButtons>button {
+    border-top-left-radius: 8px;
+    width: 77px;
+    height: 31px;
+  }
+
+.actButtons >   button:nth-child(2) {
+  border-top-right-radius: 8px;
+  border-top-left-radius: 0 !important;
+  background: url(./aaset/icons/piggy-bank\ \(1\).png);
+  background: #261717;
+  color: wheat
+}
+/* ! to return */
+
+.itemAct>.amount {
+    grid-column: 6/8;
+    height: 97px;
+    grid-row: 1;
+    margin: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.amount p {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 36px;
+    color: #FFFFFF;
+}
+
+
+.dispaly {
+    display: flex;
+    justify-content: flex-end
+}
+
+.discrtion {
+    grid-column: 3/6;
+    height: 97px;
+    grid-row: 1;
+    display: flex;
+}
+.discrtion p {
+  padding: 2px;
+    margin: 10px;
+   width: 100%;
+    color:hsla(0, 0%, 10%, 0.9);
+    font-family: "Sniglet",'Nunito', sans-serif;
+    
+  
+    
+    font-weight: bolder;
+/*     border: .3px #006277 solid;
+    box-shadow: 0 1px 1px 0 black */
+}
+
+.date {
+    grid-column: 1/3;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 97px;
+    color:#C4C4C4;
+
+}
+
+
+.log {
+    width: 371px;
+    height: 255px;
+    left: 224px;
+    top: 334px;
+    background: linear-gradient(236.59deg, #261717 8.97%, #000000 82.85%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: grid;
+    grid-template-columns: repeat(6, 61px);
+    grid-template-rows: repeat(6, 42px)
+}
+
+.log .dataTitle {
+    width: 219px;
+    height: 40px;
+    left: 294px;
+    top: 371px;
+    background: #C4C4C4;
+    border-radius: 62px;
+    
+  }
+  
+  .log .sums {
+    grid-row: 3;
+    width: 100%;
+  
+    width: 370px;
+    height: 126px;
+    display: flex;
+    grid-template-rows: repeat(2 , 63px);
+    grid-template-columns: repeat(6, 62px);
+  }
+
+  .titles , .titles *{
+    font-size: 24px;
+
+color: rgba(177, 177, 177, 0.43);
+;
+font-family: "Sniglet", sans-serif;
+grid-row: 1;width: 100%;
+text-align: none;
+  }
+  .sumAmount {
+    grid-column: 1;
+    grid-row: 2;
+    width: 100%;
+    
+  }
+
+  .log .genData {
+    grid-column: 1;
+    grid-row: 2;
+    width: 370px;
+    margin: auto;
+    display: flex;
+    justify-content: center
+
+}
+.dataTitle>p {
+    font-family: 'Sniglet';
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 24px;
+    color: #000000;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    align-items: center;
+}
+
+.form {
+    
+    grid-column:111;
+    background: white
+}
+
+.delChiose {
+    background: white;
+    box-shadow: 0 2px 6px 0 hsla(0, 0%,0%, 0.2);
+    width: 200px;
+    height: 100px;
+    border: 0.3px hsla(0, 0%, 0%, 0.2) solid ;
+    color: green;
+}
+.del-btn {
+    background: #EB5757;
+    box-shadow: 0 2px 6px 0 hsla(0, 0%,0%, 0.2);
+    border: none;
+    border-radius: 9px;
+    margin-left:  10px;
+    margin-top: 20px;
+    padding: 2px 10px;
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif
+   
+    
+    
+}
+.cancel-btn {
+    all: unset;
+    color: black;
+    margin: 0 5px
+
+}
+
+.rep {
+    background: #005E93;
+    padding: 30px;
+    color: white;
+    font-size: 18px;
+}
